@@ -1,0 +1,586 @@
+/* =========================================================
+   RESET E CONFIGURAÇÕES GERAIS (PALETA DOURADA E BEGE)
+   ========================================================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #fdfaf3; /* Bege marfim claro */
+  color: #3b2d1d; /* Marrom bronze escuro para leitura nítida */
+  line-height: 1.6;
+  position: static; /* Requisito obrigatório: position static */
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =========================================================
+   ESTILO DO QUEBRA-CABEÇA COLORIDO (LOGO E TÍTULO)
+   ========================================================= */
+.logo-quebra-cabeca {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(154, 116, 24, 0.25);
+}
+
+.titulo-com-icone {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.icone-titulo-hero {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(154, 116, 24, 0.25);
+}
+/* =========================================================
+   CABEÇALHO (HEADER)
+   ========================================================= */
+.topo {
+  background-color: #f3e6ce; /* Bege dourado suave */
+  border-bottom: 2px solid #d4af37; /* Borda dourada */
+  box-shadow: 0 4px 12px rgba(154, 116, 24, 0.15);
+}
+
+.topo-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.marca {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #3b2d1d;
+  font-size: 21px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.3);
+}
+
+.marca strong {
+  color: #9a7418; /* Dourado escuro */
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  color: #4a3723;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+
+/* Efeito :hover obrigatório em links */
+.menu a:hover {
+  color: #ffffff;
+  background-color: #b8860b; /* Dourado intenso */
+  border-color: #9a7418;
+}
+
+/* =========================================================
+   SEÇÃO PRINCIPAL (HERO SECTION)
+   ========================================================= */
+.hero {
+  background-color: #f7eedc; /* Bege areia */
+  padding-top: 60px;
+  position: relative;
+}
+
+.hero-grade {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.hero-conteudo {
+  flex: 1.3;
+  min-width: 300px;
+}
+
+.selo-campanha {
+  display: inline-block;
+  background-color: #efe0be;
+  color: #8a640f;
+  border: 1px solid #c59b27;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.15;
+  color: #2c2013;
+  margin-bottom: 18px;
+  text-shadow: 1px 1px 3px rgba(184, 134, 11, 0.25);
+}
+
+.hero h1 span {
+  color: #b8860b;
+}
+
+.subtitulo-hero {
+  font-size: 17px;
+  color: #4f3d27;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.objetivo-hero {
+  font-size: 16px;
+  color: #3b2d1d;
+  background-color: #fdfaf3;
+  border-left: 4px solid #c59b27;
+  padding: 14px 18px;
+  border-radius: 6px;
+  margin-bottom: 28px;
+  box-shadow: 0 2px 8px rgba(154, 116, 24, 0.1);
+}
+
+.botao-principal {
+  display: inline-block;
+  background-color: #c59b27; /* Dourado clássico */
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: 2px solid #9a7418;
+  box-shadow: 0 4px 12px rgba(184, 134, 11, 0.35);
+}
+
+/* Efeito :hover obrigatório em botões */
+.botao-principal:hover {
+  background-color: #9a7418;
+  border-color: #78590f;
+  color: #fdfaf3;
+  box-shadow: 0 6px 16px rgba(154, 116, 24, 0.5);
+}
+
+.hero-imagem {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.hero-imagem img {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 14px;
+  border: 4px solid #d4af37;
+  box-shadow: 0 8px 22px rgba(154, 116, 24, 0.25);
+}
+
+/* Faixa decorativa em tons de dourado e bege */
+.faixa-dourada {
+  height: 10px;
+  background: repeating-linear-gradient(
+    90deg,
+    #d4af37 0px,
+    #d4af37 35px,
+    #b8860b 35px,
+    #b8860b 70px,
+    #e6c875 70px,
+    #e6c875 105px,
+    #9a7418 105px,
+    #9a7418 140px
+  );
+}
+
+/* =========================================================
+   ESTRUTURA DAS 4 SEÇÕES
+   ========================================================= */
+.secao {
+  padding: 68px 0;
+}
+
+.secao-bege-clara {
+  background-color: #fdfaf3;
+  border-bottom: 1px solid #e6d7b9;
+}
+
+.secao-bege-media {
+  background-color: #f4ead5;
+  border-bottom: 1px solid #dec99e;
+}
+
+.cabecalho-secao {
+  margin-bottom: 38px;
+}
+
+.numero-secao {
+  display: inline-block;
+  background-color: #c59b27;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 13px;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(184, 134, 11, 0.3);
+}
+
+.cabecalho-secao h2 {
+  font-size: 30px;
+  color: #2c2013;
+  margin-bottom: 8px;
+  text-shadow: 1px 1px 2px rgba(184, 134, 11, 0.18);
+}
+
+.cabecalho-secao p {
+  color: #5c472e;
+  font-size: 16px;
+  max-width: 850px;
+}
+
+/* =========================================================
+   CARDS COM POSICIONAMENTO (RELATIVE + ABSOLUTE) E HOVER
+   ========================================================= */
+.grade-cards {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.card-item,
+.card-dica {
+  flex: 1;
+  min-width: 280px;
+  background-color: #faf3e3;
+  border: 2px solid #dfca9f;
+  border-top: 5px solid #c59b27;
+  border-radius: 12px;
+  padding: 26px 22px;
+  position: relative; /* Requisito obrigatório: position relative */
+  box-shadow: 0 4px 12px rgba(154, 116, 24, 0.12);
+}
+
+/* Efeito :hover obrigatório em cards */
+.card-item:hover,
+.card-dica:hover {
+  border-color: #b8860b;
+  background-color: #f3e5c8;
+  box-shadow: 0 8px 20px rgba(184, 134, 11, 0.28);
+}
+
+.selo-canto {
+  position: absolute; /* Requisito obrigatório: position absolute */
+  top: 12px;
+  right: 14px;
+  background-color: #c59b27;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.card-item img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #d4af37;
+  margin-bottom: 16px;
+}
+
+.card-item h3,
+.card-dica h3 {
+  font-size: 20px;
+  color: #2c2013;
+  margin-bottom: 10px;
+}
+
+.card-item p {
+  color: #4f3d27;
+  font-size: 15px;
+}
+
+.icone-dica {
+  display: inline-block;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.card-dica ul {
+  padding-left: 20px;
+  color: #4f3d27;
+  font-size: 15px;
+}
+
+.card-dica li {
+  margin-bottom: 10px;
+}
+
+/* =========================================================
+   PAINEL DE CLASSIFICAÇÕES E TABELAS
+   ========================================================= */
+.painel-estatisticas {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.card-destaque-numero {
+  flex: 1;
+  min-width: 250px;
+  background-color: #fdfaf3;
+  border: 2px solid #d4af37;
+  border-left: 6px solid #b8860b;
+  border-radius: 12px;
+  padding: 28px 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 6px 16px rgba(154, 116, 24, 0.14);
+}
+
+.numero-gigante {
+  font-size: 42px;
+  font-weight: 800;
+  color: #b8860b;
+  line-height: 1.1;
+  margin-bottom: 12px;
+  text-shadow: 1px 1px 3px rgba(184, 134, 11, 0.25);
+}
+
+.bloco-tabela {
+  flex: 2.2;
+  min-width: 300px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fdfaf3;
+  border: 2px solid #d4af37;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(154, 116, 24, 0.15);
+}
+
+caption {
+  text-align: left;
+  font-weight: 700;
+  color: #2c2013;
+  padding: 14px 18px;
+  background-color: #ebd9b4;
+  border: 2px solid #d4af37;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e2cfa9;
+  font-size: 14px;
+}
+
+th {
+  background-color: #c59b27;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+tbody tr:hover {
+  background-color: #f5ebd6;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-dourado-claro {
+  background-color: #f7e8c1;
+  color: #78590f;
+  border: 1px solid #c59b27;
+}
+
+.badge-dourado-medio {
+  background-color: #e6c875;
+  color: #4a3505;
+  border: 1px solid #b8860b;
+}
+
+.badge-dourado-escuro {
+  background-color: #b8860b;
+  color: #ffffff;
+  border: 1px solid #8a640f;
+}
+
+.nota-fonte {
+  font-size: 13px;
+  color: #6e563a;
+  margin-top: 14px;
+}
+
+/* =========================================================
+   BLOCO DE MÍDIA (VÍDEO E ÁUDIO)
+   ========================================================= */
+.grade-midia {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+  background-color: #f4ead5;
+  border: 2px solid #dfca9f;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 4px 12px rgba(154, 116, 24, 0.12);
+}
+
+.midia-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.midia-texto h3 {
+  font-size: 22px;
+  color: #2c2013;
+  margin-bottom: 10px;
+}
+
+.midia-texto p {
+  color: #4f3d27;
+  margin-bottom: 14px;
+}
+
+.citacao-destaque {
+  color: #8a640f;
+  font-weight: 700;
+  font-size: 16px;
+  border-left: 4px solid #b8860b;
+  padding-left: 14px;
+  margin: 16px 0;
+}
+
+.caixa-audio {
+  background-color: #fdfaf3;
+  border: 1px solid #d4af37;
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 16px;
+}
+
+.caixa-audio h4 {
+  font-size: 14px;
+  color: #2c2013;
+  margin-bottom: 8px;
+}
+
+.caixa-audio audio {
+  width: 100%;
+}
+
+.midia-player {
+  flex: 1.5; /* Aumenta a largura da caixa do vídeo em relação ao texto ao lado */
+  min-width: 340px;
+}
+
+.midia-player iframe {
+  width: 100%;
+  height: 380px; /* Define uma altura maior para o vídeo do YouTube */
+  border-radius: 10px;
+  border: 3px solid #c59b27;
+  box-shadow: 0 6px 18px rgba(154, 116, 24, 0.25);
+}
+
+/* =========================================================
+   RODAPÉ (FOOTER)
+   ========================================================= */
+.rodape {
+  background-color: #ebd9b4;
+  color: #3b2d1d;
+}
+
+.rodape-conteudo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 40px 24px;
+}
+
+.marca-rodape {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c2013;
+  margin-bottom: 4px;
+}
+
+.marca-rodape strong {
+  color: #9a7418;
+}
+
+.titulo-equipe {
+  font-weight: 700;
+  color: #8a640f;
+  margin-bottom: 6px;
+}
+
+.rodape-bloco ul {
+  list-style: none;
+  font-size: 14px;
+  color: #4f3d27;
+}
+
+.botao-topo {
+  display: inline-block;
+  background-color: #c59b27;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 2px solid #9a7418;
+}
+
+.botao-topo:hover {
+  background-color: #9a7418;
+  color: #fdfaf3;
+}
